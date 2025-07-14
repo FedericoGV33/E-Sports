@@ -155,11 +155,55 @@ a {
   transform: translateY(-5px);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .card-img-top {
-  oobject-fit: contain;
+  object-fit: cover;
   height: 200px;
   width: 100%;
+  object-position: center;
+}
+.card-img-team {
+  height: 120px;
+}
+.team-group {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #1e1e2f;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
+.team-card {
+  background-color: #2a2a3e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 191, 255, 0.3);
+}
+
+.team-card .card-body {
+  background-color: #2a2a3e;
+  color: #ffffff;
+}
+
+.team-card .card-text {
+  font-size: 0.9rem;
+  margin: 0;
+}
+.divider-slash {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(
+    135deg,
+    transparent 49%,
+    #0d6efd 49%,
+    #0d6efd 51%,
+    transparent 51%
+  );
+  opacity: 0.6;
+}
 @media screen {
 }
