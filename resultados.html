@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Sports Resultados</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&family=Barlow+Condensed&family=Rajdhani&family=Audiowide&family=Exo+2&family=Anton&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column min-vh-100 mt-5 pt-5">
+    <header>
+      <!--navegacion disponible en todas las paginas-->
+      <nav class="navbar navbar-expand-lg navbar-dark mi-navbar fixed-top">
+        <div class="container">
+          <p class="navbar-brand titulo-navbar">E-Sports</p>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" id="nav-active" href="./resultados.html"
+                  >Resultados</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./equipos.html">Equipos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobre-nosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-grow-1 container">
+      <h1>Resultados</h1>
+      <div>
+        <h2>Mundial de dota 2</h2>
+        <!--video-->
+        <div class="video-container">
+          <iframe
+            width="450"
+            height="360"
+            src="https://www.youtube.com/embed/putSC1vp3Rs"
+            title="dota 2 finals"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <h2>📊 Resultados - The International 2024</h2>
+        <!--esto es una tabla-->
+        <!--en las tablas el th sirve para dar el encabezado y el td para la informacion debajo a modo tabla (profesor corrija si no es correcto)-->
+        <table>
+          <tr>
+            <th>Posición</th>
+            <th>Equipo</th>
+            <th>Premios (USD)</th>
+            <th>Detalles</th>
+          </tr>
+          <tr>
+            <td>🏆 1º</td>
+            <td>Team Liquid</td>
+            <td>$1,154,818</td>
+            <td>Barrida 3-0 en la Gran Final contra Gaimin Gladiators</td>
+          </tr>
+          <tr>
+            <td>🥈 2º</td>
+            <td>Gaimin Gladiators</td>
+            <td>$359,281</td>
+            <td>Desde la final del Upper Bracket</td>
+          </tr>
+          <tr>
+            <td>🥉 3º</td>
+            <td>Tundra Esports</td>
+            <td>$230,921</td>
+            <td>Eliminado en la Lower Bracket Final</td>
+          </tr>
+          <tr>
+            <td>4º</td>
+            <td>Team Falcons</td>
+            <td>$153,948</td>
+            <td>Cuarta posicion</td>
+          </tr>
+          <tr>
+            <td>5-6º</td>
+            <td>Cloud9, Xtreme Gaming</td>
+            <td>$89,820</td>
+            <td>Comparten 5to y 6to puesto</td>
+          </tr>
+          <tr>
+            <td>7-8º</td>
+            <td>BetBoom Team, Aurora</td>
+            <td>$89,820</td>
+            <td>Comparten 7mo y 8vo puesto</td>
+          </tr>
+          <tr>
+            <td>9-12º</td>
+            <td>nouns, 1w Team, HEROIC, Team Spirit</td>
+            <td>$64,127</td>
+            <td>Comparten puestos 9 a 12</td>
+          </tr>
+          <tr>
+            <td>13-16º</td>
+            <td>Talon Esports, Team Zero, beastcoast, G2.iG</td>
+            <td>$64,127</td>
+            <td>Comparten puestos 13 a 16</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer class="text-white text-center py-2 mt-auto">
+      <div class="container"></div>
+      <p class="mb-0">Desarrollado por Federico Valentini</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

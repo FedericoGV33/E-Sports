@@ -1,0 +1,165 @@
+/*el punto (.) es para clases (class) y el numeral (#) es para los ids (id)*/
+/* la clase suele utilizarse para cosas mas generales, como cuando tenes varias cosas a modificar con el mismo valor*/
+/*
+.imagen-estadisticas {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}*/
+/*
+#parrafo-estadisticas {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}*/
+
+#nav-active {
+  font-weight: bold;
+}
+/*
+.equipo {
+  color: brown;
+}*/
+
+#contenedor-equipos {
+  background-color: bisque;
+  width: 300px;
+}
+
+#equipo-favorito {
+  color: gray;
+}
+
+body {
+  background-color: #1e1e1e !important;
+  font-family: "Rajdhani", sans-serif;
+  color: #ffffff;
+  background-color: #1c1c1c;
+
+  background-image: repeating-linear-gradient(
+      45deg,
+      rgba(0, 100, 255, 0.05),
+      rgba(0, 100, 255, 0.05) 2px,
+      transparent 2px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05) 2px,
+      transparent 2px,
+      transparent 20px
+    );
+
+  background-size: 100% 100%;
+  color: #f0f0f0;
+}
+
+header {
+  width: 100%;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212 !important;
+}
+/*el list display sirve para modificar indicador de la lista*/
+/*flex-wrap sirve para acomodar los items hacia abajo cuando no entren en pantalla*/
+.lista-navegacion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+/*+
+main {
+  padding-left: 8px;
+  padding-right: 8px;
+}*/
+
+footer {
+  background-color: #121212 !important;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 450px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav-link {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.contenedor-contacto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.input-formulario {
+  padding: 8px;
+  width: 100%;
+  resize: none;
+}
+.boton-contacto {
+  width: 50%;
+  min-width: 120px;
+  max-width: 300px;
+}
+/* text decoration para modificar el texto por defecto*/
+a {
+  text-decoration: none;
+}
+.titulo-navbar {
+  position: relative;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 12px 30px;
+  z-index: 1;
+  display: inline-block;
+}
+
+.titulo-navbar::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(-12deg);
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 60px solid #00bfff;
+  z-index: -1;
+  opacity: 0.9;
+}
+.sobre-nosotros .card:hover {
+  background-color: #2a2a2a !important;
+  transform: translateY(-5px);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.card-img-top {
+  oobject-fit: contain;
+  height: 200px;
+  width: 100%;
+}
+
+@media screen {
+}
