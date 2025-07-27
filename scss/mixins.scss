@@ -1,0 +1,13 @@
+@mixin boton-basico {
+  border: 1px solid $color-principal;
+  border-radius: 5px;
+  color: $color-principal;
+  background: transparent;
+  transition: all 0.3s;
+  padding: $espaciado / 2;
+  &:hover {
+    cursor: pointer;
+    background: $color-principal;
+    color: $color-fondo;
+  }
+}

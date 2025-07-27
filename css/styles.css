@@ -157,7 +157,7 @@ a {
 }
 
 .card-img-top {
-  object-fit: cover;
+  object-fit: fill;
   height: 200px;
   width: 100%;
   object-position: center;
@@ -191,7 +191,7 @@ a {
 
 .team-card .card-text {
   font-size: 0.9rem;
-  margin: 0;
+  margin-bottom: 8px;
 }
 .divider-slash {
   width: 100%;
@@ -204,6 +204,4 @@ a {
     transparent 51%
   );
   opacity: 0.6;
-}
-@media screen {
 }

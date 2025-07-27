@@ -1,0 +1,86 @@
+.boton-mas-info {
+  border: 1px solid #0dcaf0;
+  border-radius: 5px;
+  color: #0dcaf0;
+  background: transparent;
+  transition: all 0.3s;
+  padding: 4px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+.boton-mas-info:hover {
+  cursor: pointer;
+  background: #0dcaf0;
+  color: #1a1a1a;
+}
+
+.dialogo-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.dialogo-overlay:target {
+  opacity: 1;
+  visibility: visible;
+}
+.dialogo-overlay .dialogo-contenido {
+  background: #1a1a1a;
+  color: #ffffff;
+  border: 2px solid #0dcaf0;
+  border-radius: 5px;
+  padding: 8px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+}
+.dialogo-overlay .dialogo-contenido h3 {
+  color: #0dcaf0;
+  margin-bottom: 8px;
+}
+.dialogo-overlay .dialogo-contenido .boton-cerrar-dialogo {
+  border: 1px solid #0dcaf0;
+  border-radius: 5px;
+  color: #0dcaf0;
+  background: transparent;
+  transition: all 0.3s;
+  padding: 4px;
+  margin-top: 8px;
+  text-decoration: none;
+}
+.dialogo-overlay .dialogo-contenido .boton-cerrar-dialogo:hover {
+  cursor: pointer;
+  background: #0dcaf0;
+  color: #1a1a1a;
+}
+
+.terminos-contenedor {
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+}
+.terminos-contenedor h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.terminos-contenedor .terminos-seccion {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #0dcaf0;
+}
+.terminos-contenedor .terminos-seccion h2 {
+  color: #0dcaf0;
+  margin-bottom: 8px;
+}
+
+/*# sourceMappingURL=scss_styles.css.map */

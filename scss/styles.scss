@@ -1,0 +1,65 @@
+@import "variables";
+@import "mixins";
+
+.boton-mas-info {
+  @include boton-basico;
+  text-decoration: none;
+  margin-top: $espaciado;
+}
+.dialogo-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  .dialogo-contenido {
+    background: $color-fondo;
+    color: $color-texto;
+    border: 2px solid $color-principal;
+    border-radius: 5px;
+    padding: $espaciado;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80%;
+    overflow-y: auto;
+    h3 {
+      color: $color-principal;
+      margin-bottom: $espaciado;
+    }
+    .boton-cerrar-dialogo {
+      @include boton-basico;
+      margin-top: $espaciado;
+      text-decoration: none;
+    }
+  }
+}
+.terminos-contenedor {
+  color: $color-texto;
+  height: 100%;
+  width: 100%;
+  h1 {
+    text-align: center;
+    margin-bottom: $espaciado * 3;
+  }
+  .terminos-seccion {
+    margin-bottom: $espaciado * 2;
+    padding: $espaciado;
+    border: 1px solid $color-principal;
+    h2 {
+      color: $color-principal;
+      margin-bottom: $espaciado;
+    }
+  }
+}
