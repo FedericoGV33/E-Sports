@@ -205,3 +205,108 @@ a {
   );
   opacity: 0.6;
 }
+
+.animated-line {
+  position: absolute;
+  top: 5px;
+  left: 300px;
+  height: 2px; /* raya fina */
+  width: 30px; /* longitud de la raya */
+  background-color: #00bfff; /* azul celeste */
+  opacity: 0;
+  animation: moveFade 1s linear infinite;
+  z-index: 1;
+  animation-duration: 1s;
+}
+
+@keyframes moveFade {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1800%);
+    opacity: 0;
+  }
+}
+.animated-line:nth-child(1) {
+  top: 10px;
+  animation-delay: 0.12s;
+  animation-duration: 1.355s;
+}
+.animated-line:nth-child(2) {
+  top: 15px;
+  animation-delay: 0.74s;
+  animation-duration: 1.3s;
+}
+.animated-line:nth-child(3) {
+  top: 20px;
+  animation-delay: 0.98s;
+  animation-duration: 1.15s;
+}
+.animated-line:nth-child(4) {
+  top: 25px;
+  animation-delay: 0.23s;
+  animation-duration: 1.2s;
+}
+.animated-line:nth-child(5) {
+  top: 30px;
+  animation-delay: 0.57s;
+  animation-duration: 1.389s;
+}
+.animated-line:nth-child(6) {
+  top: 35px;
+  animation-delay: 0.64s;
+  animation-duration: 0.99s;
+}
+.animated-line:nth-child(7) {
+  top: 40px;
+  animation-delay: 0.45s;
+  animation-duration: 1.18s;
+}
+.animated-line:nth-child(8) {
+  top: 45px;
+  animation-delay: 0.33s;
+  animation-duration: 1.25s;
+}
+.animated-line:nth-child(9) {
+  top: 50px;
+  animation-delay: 0.87s;
+  animation-duration: 1.31s;
+}
+.animated-line:nth-child(10) {
+  top: 55px;
+  animation-delay: 1.02s;
+  animation-duration: 0.95s;
+}
+.animated-line:nth-child(11) {
+  top: 60px;
+  animation-delay: 1.23s;
+  animation-duration: 1.47s;
+}
+.animated-line:nth-child(12) {
+  top: 65px;
+  animation-delay: 1.23s;
+  animation-duration: 1.27s;
+}
+.animated-line:nth-child(13) {
+  top: 70px;
+  animation-delay: 1.62s;
+  animation-duration: 1.29s;
+}
+.animated-line:nth-child(14) {
+  top: 75px;
+  animation-delay: 1.04s;
+  animation-duration: 1.32s;
+}
+.animated-line:nth-child(15) {
+  top: 80px;
+  animation-delay: 1.21s;
+  animation-duration: 1.19s;
+}
