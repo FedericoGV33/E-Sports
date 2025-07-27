@@ -155,9 +155,13 @@ a {
   transform: translateY(-5px);
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
-.card-img-top {
+.card-img-index {
   object-fit: fill;
+  height: 200px;
+  width: 100%;
+}
+.card-img-top {
+  object-fit: contain;
   height: 200px;
   width: 100%;
   object-position: center;
@@ -185,11 +189,15 @@ a {
 }
 
 .team-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #2a2a3e;
   color: #ffffff;
 }
 
 .team-card .card-text {
+  height: 45px;
   font-size: 0.9rem;
   margin-bottom: 8px;
 }
@@ -205,33 +213,37 @@ a {
   );
   opacity: 0.6;
 }
-
+.line-container {
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
 .animated-line {
   position: absolute;
   top: 5px;
-  left: 300px;
-  height: 2px; /* raya fina */
-  width: 30px; /* longitud de la raya */
-  background-color: #00bfff; /* azul celeste */
+  left: 0;
+  height: 2px;
+  width: 8vw;
+  background-color: #00bfff;
   opacity: 0;
   animation: moveFade 1s linear infinite;
-  z-index: 1;
+  z-index: -1;
   animation-duration: 1s;
 }
 
 @keyframes moveFade {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-30vw);
     opacity: 0;
   }
   10% {
-    opacity: 1;
+    opacity: 0.3;
   }
   90% {
-    opacity: 1;
+    opacity: 0.3;
   }
   100% {
-    transform: translateX(1800%);
+    transform: translateX(100vw);
     opacity: 0;
   }
 }
