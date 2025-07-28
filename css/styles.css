@@ -213,11 +213,7 @@ a {
   );
   opacity: 0.6;
 }
-.line-container {
-  position: relative;
-  height: 100px;
-  width: 100%;
-}
+
 .animated-line {
   position: absolute;
   top: 5px;
@@ -237,10 +233,10 @@ a {
     opacity: 0;
   }
   10% {
-    opacity: 0.3;
+    opacity: 0.25;
   }
   90% {
-    opacity: 0.3;
+    opacity: 0.25;
   }
   100% {
     transform: translateX(100vw);
@@ -321,4 +317,9 @@ a {
   top: 80px;
   animation-delay: 1.21s;
   animation-duration: 1.19s;
+}
+
+table img {
+  border: 0.3px solid rgb(185, 184, 184);
+  border-radius: 2px;
 }
