@@ -323,3 +323,11 @@ table img {
   border: 0.3px solid rgb(185, 184, 184);
   border-radius: 2px;
 }
+
+.divisor-lineas {
+  width: 60px;
+  height: 10px;
+  background-color: #00bfff;
+  transform: rotate(-50deg);
+  border-radius: 2px;
+}
