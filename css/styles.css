@@ -331,3 +331,58 @@ table img {
   transform: rotate(-50deg);
   border-radius: 2px;
 }
+.tabla-esports {
+  table-layout: fixed;
+  width: 100%;
+}
+.tabla-esports col:nth-child(1) {
+  width: 15%;
+}
+
+.tabla-esports col:nth-child(2) {
+  width: 35%;
+}
+
+.tabla-esports col:nth-child(3) {
+  width: 25%;
+}
+
+.tabla-esports col:nth-child(4) {
+  width: 25%;
+}
+.no-scroll-x {
+  overflow-x: hidden;
+}
+.footer-custom {
+  background-color: #000;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+
+.footer-custom a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-custom a:hover {
+  color: #009acd;
+  text-decoration: underline;
+}
+
+/* Botón volver arriba */
+.btn-volver-arriba {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #00bfff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-volver-arriba:hover {
+  background-color: #009acd;
+}
